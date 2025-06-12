@@ -1,12 +1,12 @@
 # 🚀 The Future of AI-Powered Logistics
 
-	A dynamic prototype built to showcase cloud deployment, reverse proxy setup, and a Node.js-powered landing page hosted on AWS.
+	A dynamic prototype built to showcase cloud deployment, reverse proxy setup, and a Node.js-powered landing 	page hosted on AWS.
 
 ---
 
 ## Project Overview
 
-	This project demonstrates how to build and deploy a dynamic prototype using modern cloud infrastructure and professional deployment practices.
+	This project demonstrates how to build and deploy a dynamic prototype using modern cloud infrastructure and 	professional deployment practices.
 
 ## Author
 
