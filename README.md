@@ -10,8 +10,8 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
 
 ## Author
 
- Oladoye Toyeeb Olaoluwa– Lead Cloud Engineer
- AWS Certified • Full-stack Developer • DevOps Specialist*
+ Oladoye Toyeeb Olaoluwa–
+ Lead Cloud Engineer--AWS Certified--Full-stack Developer--DevOps Specialist
 
 ---
 
