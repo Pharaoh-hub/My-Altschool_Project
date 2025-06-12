@@ -45,7 +45,7 @@ I opened a free tier account with AWS:
 * Added the storage by:Setting storage size to 20gb
 * Configured security group by allowing the following ports:
 
-  --SSH which is a secure shell (Port 22) to enables me remotely access my server securely and performed other operations 
+--SSH which is a secure shell (Port 22) to enables me remotely access my server securely and performed other operations 
 
 --HTTP which is a HyperText Transfer Protocol, basically enables web browsers allow access to websites (Port 80) and allows web traffic.
 
