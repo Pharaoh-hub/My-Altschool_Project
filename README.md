@@ -34,7 +34,9 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
 
         
 
-I opened a free tier account with AWS:
+I opened a free tier account with AWS:	
+
+
 #1. Provision EC2 Instance
 
 * Launched a "t2.micro" instance using "Ubuntu 22.04". (To configured my EC2 Instance,I Launched the EC2 Instance by Logging into my AWS Management Console, I browsed to the EC2 Dashboard and clicked on the Launch Instance, chose the Amazon Machine Image (AMI), the proceeded to select Ubuntu 22.04 LTS as my preferred version
