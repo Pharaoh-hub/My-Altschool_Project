@@ -78,7 +78,7 @@ Breaking it down:
 
 I wrote an HTML landing page code and saved it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
 
-	Attached screenshot of my HTML landing page code--(https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing)
+Attached screenshot of my HTML landing page code--(https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing)
 	
 I was able to copy the HTML landing page code written and saved in my index.html directory on my kali via the Secure Copy Protocol SCP
 
@@ -126,7 +126,7 @@ to allow my server access SSH which is port 22; HTTP=port 80,HTTPS=port 443 and 
 I then enabled all ports using "sudo ufw enable" and "sudo ufw status numbered" to confirmed the number of ports I just allowed and "sudo ufw status" to check if they are all running. 
 
 
-	Attached screenshot of all the ports allowed over over IPv4 and Ipv6---https://drive.google.com/file/d/1rIF1tJDwtKihXdE3Z128TxxWhsZ2i0oi/view?usp=sharing
+Attached screenshot of all the ports allowed over over IPv4 and Ipv6---https://drive.google.com/file/d/1rIF1tJDwtKihXdE3Z128TxxWhsZ2i0oi/view?usp=sharing
 
 4. I Installed all the required Server Software (nginx, nodejs and express. 
 Commands I ran
