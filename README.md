@@ -50,19 +50,25 @@ SSH which is a secure shell (Port 22) to enables me remotely access my server se
 HTTP which is a HyperText Transfer Protocol, basically enables web browsers allow access to websites (Port 80) and allows web traffic.
 
 HTTPS This is a secure version of HTTP using SSL(Secure Sockets Layer) certificate, is an encryption security protocal(Port 443) → Enables secure web traffic.
+
 Port 3000 for nodejs, allow access to the backend using a reverse proxy(nginx), I detailed this later in the project.
-I set my source type to anywhere (0.0.0.0/0) for public access.
-and I launched and downloaded the key pair for my opened ports "22, 80, 443, 3000" in the security group.
+
+I set my source type to anywhere (0.0.0.0/0) for public access, launched and downloaded the key pair for my opened ports "22, 80, 443, 3000" in the security group.
 
 #2. SSH Into My Server
 
 I used the "pharaoh_key.pem" Private key file I downloaded from AWS:
 
+
 Commands I ran on my server via my Kali::
 
-"chmod 400 Pharaoh_key.pem" this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
+
+"chmod 400 Pharaoh_key.pem"
+this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
+
 Breaking it down:
 chmod-- This changes the file permissions or mode, chmod simply means "change mode"
+
 400-- 4 is the special privileges to Read, Write, Execute and Delete, 00 permissions for others. 
   
 
