@@ -44,17 +44,17 @@ I used the "pharaoh_key.pem" Private key file I downloaded from AWS:
 
 Commands I ran on my server via my Kali::
 
-chmod 400 Pharaoh_key.pem this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
+"chmod 400 Pharaoh_key.pem" this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
 Breaking it down:
-chmod--This changes the file permissions or mode, chmod simply means "change mode"
-400-- 4 is the special privileges reserved for me to Read, Write, Execute and Delete, 00 permissions for others. 
+chmod-- This changes the file permissions or mode, chmod simply means "change mode"
+400-- 4 is the special privileges to Read, Write, Execute and Delete, 00 permissions for others. 
   
 
                                               MY WEB SERVER
                   
 
 I wrote an HTML landing page code and save it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
-Attached Screenshot of my HTML landing page code---https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing
+Attached screenshot of my HTML landing page code---https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing
 
 
 I was able to copy the HTML landing page code written and saved in my index.html directory on my kali via the Secure Copy Protocol SCP
