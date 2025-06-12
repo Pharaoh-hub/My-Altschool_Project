@@ -16,13 +16,13 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
 ---
 
  Tech Stack
---A Kali Linus 
---AWS EC2 (Ubuntu 22.04)
---Node.js + Express
---Nginx (Reverse Proxy)
---PM2 (Process Manager)
---Let’s Encrypt (SSL via Certbot)
---Tailwind CSS (Styling)
+* A Kali Linus 
+* AWS EC2 (Ubuntu 22.04)
+* Node.js + Express
+* Nginx (Reverse Proxy)
+* PM2 (Process Manager)
+* Let’s Encrypt (SSL via Certbot)
+* Tailwind CSS (Styling)
 
 ---
 
