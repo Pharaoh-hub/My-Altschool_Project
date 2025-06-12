@@ -11,18 +11,18 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
 ## Author
 
  Oladoye Toyeeb Olaoluwa–
- *Lead Cloud Engineer--AWS Certified--Full-stack Developer--DevOps Specialist
+ Lead Cloud Engineer--AWS Certified--Full-stack Developer--DevOps Specialist
 
 ---
 
  Tech Stack
-* A Kali Linus 
-* AWS EC2 (Ubuntu 22.04)
-* Node.js + Express
-* Nginx (Reverse Proxy)
-* PM2 (Process Manager)
-* Let’s Encrypt (SSL via Certbot)
-* Tailwind CSS (Styling)
+--A Kali Linus 
+--AWS EC2 (Ubuntu 22.04)
+--Node.js + Express
+--Nginx (Reverse Proxy)
+--PM2 (Process Manager)
+--Let’s Encrypt (SSL via Certbot)
+--Tailwind CSS (Styling)
 
 ---
 
