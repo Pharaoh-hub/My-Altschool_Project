@@ -199,7 +199,7 @@ Public IP
 	##SCREENSHOTS				
 
 ## Visit the hosted page: (http://13.61.2.68) IP Address That Accesses The Landing Page Using Just HTTP(not secured) 
-	Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP--https://drive.google.com/file/d/1t16YaW43NNxGKSqBKMswqIGwALUqe_en/view?usp=sharing
+Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP--https://drive.google.com/file/d/1t16YaW43NNxGKSqBKMswqIGwALUqe_en/view?usp=sharing
 
 ##(Also accessible via: (https://gogogaga.site)) but with configuring SSL Certificate, making it a Secure Server by getting a domain name for it. 
 	Attached screenshot shows what URL of landing page looks like after getting a domain name and making it secure ---https://drive.google.com/file/d/1-lvAmO9H9FUVfQazpjD0OWLN0NxWNQVZ/view?usp=sharing
