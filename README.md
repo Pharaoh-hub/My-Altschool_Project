@@ -76,15 +76,13 @@ Breaking it down:
                                               MY WEB SERVER
                   
 
-I wrote an HTML landing page code and save it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
+I wrote an HTML landing page code and saved it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
 
-	Attached screenshot of my HTML landing page code--			https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-	t7QzwU2oAH/view?usp=sharing
+	Attached screenshot of my HTML landing page code--(https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing)
 	
-
 I was able to copy the HTML landing page code written and saved in my index.html directory on my kali via the Secure Copy Protocol SCP
 
-	"scp /media/sf_index.htm/index.html ubuntu@13.61.2.68:/var/www/html/ since the default directory for html 	file on the server is /var/www/html. 
-
+	"scp /media/sf_index.htm/index.html ubuntu@13.61.2.68:/var/www/html/ since the default directory for html file on the server is /var/www/html. 
 
 I ran
 
@@ -93,7 +91,8 @@ I ran
 After ssh into my server,I ran
 
  	"sudo nano /var/www/html/index.html" to view my html file in my server
-	Attached screenshot to confirm my HTML landing page code is in my server under the /var/www/html/index.html 	directory---https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
+Attached screenshot to confirm my HTML landing page code is in my server under the /var/www/html/index.html directory
+---https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
 					 
 
 					HOW I DEPLOYED EVERYTHING ON MY SERVER
