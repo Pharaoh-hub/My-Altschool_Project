@@ -14,15 +14,15 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
  Lead Cloud Engineer--AWS Certified--Full-stack Developer--DevOps Specialist
 
 ---
-
  Tech Stack
-* A Kali Linus 
-* AWS EC2 (Ubuntu 22.04)
-* Node.js + Express
-* Nginx (Reverse Proxy)
-* PM2 (Process Manager)
-* Let’s Encrypt (SSL via Certbot)
-* Tailwind CSS (Styling)
+ 
+	* A Kali Linus 
+	* AWS EC2 (Ubuntu 22.04)
+	* Node.js + Express
+	* Nginx (Reverse Proxy)
+	* PM2 (Process Manager)
+	* Let’s Encrypt (SSL via Certbot)
+	* Tailwind CSS (Styling)
 
 ---
 
@@ -39,35 +39,35 @@ I opened a free tier account with AWS:
 
 #1. Provision EC2 Instance
 
-* Launched a "t2.micro" instance using "Ubuntu 22.04". (To configured my EC2 Instance,I Launched the EC2 Instance by Logging into my AWS Management Console, I browsed to the EC2 Dashboard and clicked on the Launch Instance, chose the Amazon Machine Image (AMI), then proceeded to select Ubuntu 22.04 LTS as my preferred version
-* I chose an Instance Type: selected t2.micro (eligible for AWS Free Tier).
-* Configured my Instance details, by keeping the default settings unless I need a more specific configurations
-* Added the storage by:Setting storage size to 20gb
-* Configured security group by allowing the following ports:
+	* Launched a "t2.micro" instance using "Ubuntu 22.04". (To configured my EC2 Instance,I Launched the EC2 Instance by Logging into my AWS Management Console, I browsed to the EC2 Dashboard and clicked on the Launch Instance, chose the Amazon Machine Image (AMI), then proceeded to select Ubuntu 22.04 LTS as my preferred version
+	* I chose an Instance Type: selected t2.micro (eligible for AWS Free Tier).
+	* Configured my Instance details, by keeping the default settings unless I need a more specific configurations
+	* Added the storage by:Setting storage size to 20gb
+	* Configured security group by allowing the following ports:
 
---SSH which is a secure shell (Port 22) to enables me remotely access my server securely and performed other operations 
+--SSH which is a secure shell (Port 22) to enables me remotely access my server securely and performed other operations
+  
+	--HTTP which is a HyperText Transfer Protocol, basically enables web browsers allow access to websites (Port 80) and allows web traffic.
 
---HTTP which is a HyperText Transfer Protocol, basically enables web browsers allow access to websites (Port 80) and allows web traffic.
+	--HTTPS This is a secure version of HTTP using SSL(Secure Sockets Layer) certificate, is an encryption security protocal(Port 443) → Enables secure web traffic.
 
---HTTPS This is a secure version of HTTP using SSL(Secure Sockets Layer) certificate, is an encryption security protocal(Port 443) → Enables secure web traffic.
-
---Port 3000 for nodejs, allow access to the backend using a reverse proxy(nginx), I detailed this later in the project.
+	--Port 3000 for nodejs, allow access to the backend using a reverse proxy(nginx), I detailed this later in the project.
 
 I set my source type to anywhere (0.0.0.0/0) for public access, launched and downloaded the key pair for my opened ports "22, 80, 443, 3000" in the security group.
 
 #2. SSH Into My Server
 
-I used the "pharaoh_key.pem" Private key file I downloaded from AWS:
+	I used the "pharaoh_key.pem" Private key file I downloaded from AWS:
 
 
 Commands I ran on my server via my Kali::
 
 
-"chmod 400 Pharaoh_key.pem"	
-
-	this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
+	"chmod 400 Pharaoh_key.pem"	
+	this was to sets the file permissions so that only the myself can read the file, while preventing anyone 	else from modifying or executing it.
 
 Breaking it down:
+
 	chmod-- This changes the file permissions or mode, chmod simply means "change mode"
 
 	400-- 4 is the special privileges to Read, Write, Execute and Delete, 00 permissions for others. 
@@ -77,32 +77,41 @@ Breaking it down:
                   
 
 I wrote an HTML landing page code and save it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
+
 	Attached screenshot of my HTML landing page code--			https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-	t7QzwU2oAH/view?usp=sharing
 	
 
 I was able to copy the HTML landing page code written and saved in my index.html directory on my kali via the Secure Copy Protocol SCP
+
 	"scp /media/sf_index.htm/index.html ubuntu@13.61.2.68:/var/www/html/ since the default directory for html 	file on the server is /var/www/html. 
 
 
-I ran 
+I ran
+
 	"ssh -i Pharaoh_key.pem ubuntu@13.61.2.68" to securely access my server using my private key which is in the 	same directory I ssh from with my public IP Address. 
 
-After ssh into my server, I ran "sudo nano /var/www/html/index.html" to confirm my html file is in my server
-Attached screenshot to confirm my HTML landing page code is in my server under the /var/www/html/index.html directory---https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
+After ssh into my server,I ran
+
+ 	"sudo nano /var/www/html/index.html" to view my html file in my server
+	Attached screenshot to confirm my HTML landing page code is in my server under the /var/www/html/index.html 	directory---https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
 					 
 
 					HOW I DEPLOYED EVERYTHING ON MY SERVER
 
 					
 #3. Enable Required Ports (Using UFW)
+
 I downloaded ufw(Uncomplicated Firewall) on the server using 
-"sudo apt update" to update the package lists as a root or superuser on my system, check for new version of the package I'm about to install
+
+	"sudo apt update" to update the package lists as a root or superuser on my system, check for new version of 	the package I'm about to install
 then I ran
-"sudo apt install ufw -y" to install the latest available version of ufw
-"sudo ufw status" to checked if it's installed
+
+	"sudo apt install ufw -y" to install the latest available version of ufw
+	"sudo ufw status" to checked if it's installed
 I allowed SSH to avoid locking myself out of my server
-"sudo ufw allow OpenSSH"
-"sudo ufw status" to checked the status if it was active or not. if it wasn't active, then I ran
+
+	"sudo ufw allow OpenSSH"
+	"sudo ufw status" to checked the status if it was active or not. if it wasn't active, then I ran
 "sudo ufw enable" to get it enabled, so it can be active and running, then I ran
 "sudo ufw status" again to confirm the activeness. 
 I ran the following commands;
