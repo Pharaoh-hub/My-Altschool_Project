@@ -27,16 +27,30 @@ This project demonstrates how to build and deploy a dynamic prototype using mode
 ---
 
 ## Detailed Setup Instructions
-    
-                                		MY SERVER SETUP
 
-          Everything was done on my Kali Linus
+					"Everything was done on my Kali Linus"
+     						
+                                	MY SERVER SETUP
 
+        
 
+I opened a free tier account with AWS:
 #1. Provision EC2 Instance
 
-* Launched a "t2.micro" instance using "Ubuntu 22.04".
-* Opened ports "22, 80, 443, 3000" in the security group.
+* Launched a "t2.micro" instance using "Ubuntu 22.04". (To configured my EC2 Instance,I Launched the EC2 Instance by Logging into my AWS Management Console, I browsed to the EC2 Dashboard and clicked on the Launch Instance, chose the Amazon Machine Image (AMI), the proceeded to select Ubuntu 22.04 LTS as my preferred version
+* I chose an Instance Type: selected t2.micro (eligible for AWS Free Tier).
+* Configured my Instance details, by keeping the default settings unless I need a more specific configurations
+* Added the storage by:Setting storage size to 20gb
+* Configured security group by allowing the following ports:
+
+SSH which is a secure shell (Port 22) to enables me remotely access my server securely and performed other operations 
+
+HTTP which is a HyperText Transfer Protocol, basically enables web browsers allow access to websites (Port 80) and allows web traffic.
+
+HTTPS This is a secure version of HTTP using SSL(Secure Sockets Layer) certificate, is an encryption security protocal(Port 443) → Enables secure web traffic.
+Port 3000 for nodejs, allow access to the backend using a reverse proxy(nginx), I detailed this later in the project.
+I set my source type to anywhere (0.0.0.0/0) for public access.
+and I launched and downloaded the key pair for my opened ports "22, 80, 443, 3000" in the security group.
 
 #2. SSH Into My Server
 
