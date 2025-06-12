@@ -63,27 +63,29 @@ I used the "pharaoh_key.pem" Private key file I downloaded from AWS:
 Commands I ran on my server via my Kali::
 
 
-"chmod 400 Pharaoh_key.pem"
-this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
+"chmod 400 Pharaoh_key.pem"	
+
+	this was to sets the file permissions so that only the myself can read the file, while preventing anyone else from modifying or executing it.
 
 Breaking it down:
-chmod-- This changes the file permissions or mode, chmod simply means "change mode"
+	chmod-- This changes the file permissions or mode, chmod simply means "change mode"
 
-400-- 4 is the special privileges to Read, Write, Execute and Delete, 00 permissions for others. 
+	400-- 4 is the special privileges to Read, Write, Execute and Delete, 00 permissions for others. 
   
 
                                               MY WEB SERVER
                   
 
 I wrote an HTML landing page code and save it under a directory called index.html on my kali so I can easily access it whenever I ssh into my server. 
-Attached screenshot of my HTML landing page code---https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing
-
+	Attached screenshot of my HTML landing page code--			https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-	t7QzwU2oAH/view?usp=sharing
+	
 
 I was able to copy the HTML landing page code written and saved in my index.html directory on my kali via the Secure Copy Protocol SCP
-"scp /media/sf_index.htm/index.html ubuntu@13.61.2.68:/var/www/html/ since the default directory for html file on the server is /var/www/html. 
+	"scp /media/sf_index.htm/index.html ubuntu@13.61.2.68:/var/www/html/ since the default directory for html 	file on the server is /var/www/html. 
 
 
-I ran "ssh -i Pharaoh_key.pem ubuntu@13.61.2.68" to securely access my server using my private key which is in the same directory I ssh from with my public IP Address. 
+I ran 
+	"ssh -i Pharaoh_key.pem ubuntu@13.61.2.68" to securely access my server using my private key which is in the 	same directory I ssh from with my public IP Address. 
 
 After ssh into my server, I ran "sudo nano /var/www/html/index.html" to confirm my html file is in my server
 Attached screenshot to confirm my HTML landing page code is in my server under the /var/www/html/index.html directory---https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
