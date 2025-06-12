@@ -147,7 +147,7 @@ After installing both nginx and nodejs...I created a project directory
 	"npm install express" This helped to install the Express.js framework for Node.js
 I 
 
-	"sudo nano myproject" inside the directory "myproject", wrote a code to let the server listens to port 3000 from anywhere and interacts with the backend to display, below is the Attached screenshot of the code---https://drive.google.com/file/d/1o3i372dzkynRqSP9OFC2PysDOxR-NmbI/view?usp=sharing
+"sudo nano myproject" inside the directory "myproject", wrote a code to let the server listens to port 3000 from anywhere and interacts with the backend to display, below is the Attached screenshot of the code---https://drive.google.com/file/d/1o3i372dzkynRqSP9OFC2PysDOxR-NmbI/view?usp=sharing
 and this is the visible code 
 
 	const express = require('express');
@@ -185,11 +185,11 @@ And my feedback was/is
 	And I enabled the configuration with this code "sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/"
 	and test the configuration to confirm it's running and active with "sudo nginx -t" where -t means to test the configuration for any syntax error. 
 	To access the domain name or IP Address, you need to start the nginx to apply changes made using "sudo systemctl restart nginx"
-	And we finally were able to access the server using either https://gogogaga.site and it displays my HTML landing page.  
+And we finally were able to access the server using either https://gogogaga.site and it displays my HTML landing page.  
 
 
 
-	Public IP
+Public IP
 	Server IP: http://13.61.2.68
 	Domain: https://gogogaga.site
 
@@ -198,13 +198,13 @@ And my feedback was/is
 
 	##SCREENSHOTS				
 
-	## Visit the hosted page: (http://13.61.2.68) IP Address That Accesses The Landing Page Using Just HTTP(not secured) 
+## Visit the hosted page: (http://13.61.2.68) IP Address That Accesses The Landing Page Using Just HTTP(not secured) 
 	Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP--https://drive.google.com/file/d/1t16YaW43NNxGKSqBKMswqIGwALUqe_en/view?usp=sharing
 
-	##(Also accessible via: (https://gogogaga.site)) but with configuring SSL Certificate, making it a Secure Server by getting a domain name for it. 
+##(Also accessible via: (https://gogogaga.site)) but with configuring SSL Certificate, making it a Secure Server by getting a domain name for it. 
 	Attached screenshot shows what URL of landing page looks like after getting a domain name and making it secure ---https://drive.google.com/file/d/1-lvAmO9H9FUVfQazpjD0OWLN0NxWNQVZ/view?usp=sharing
 
-	##(http://13.61.2.68:3000 or http://gogogaga:3000) – Direct access to the Node.js app, A reverse proxy like Nginx is commonly used in backend setups to improve performance, security, and scalability. 
-	Attached screenshot shows what backend URL and page looks like after implementing node.js and nginx as reverse proxy ---https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
+##(http://13.61.2.68:3000 or http://gogogaga:3000) – Direct access to the Node.js app, A reverse proxy like Nginx is commonly used in backend setups to improve performance, security, and scalability. 
+Attached screenshot shows what backend URL and page looks like after implementing node.js and nginx as reverse proxy ---https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
 	https://drive.google.com/file/d/1h0lcboQCcca-AKsBWvvv97TicdeRtUnm/view?usp=sharing
 
