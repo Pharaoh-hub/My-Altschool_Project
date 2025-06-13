@@ -196,9 +196,11 @@ Public IP
 	##SCREENSHOTS				
 
 ##  Visit the hosted page: (http://13.61.2.68) IP Address That Accesses The Landing Page Using Just HTTP(not secured) 
-Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP---https://drive.google.com/file/d/1C3gLIvLp_vyKIQa5DUVEum_FhGGWhHv5/view?usp=sharing
+Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP---https://drive.google.com/file/d/1C3gLIvLp_vyKIQa5DUVEum_FhGGWhHv5/view?usp=sharing 
+
 ##(Also accessible via: (https://gogogaga.site)) but with configuring SSL Certificate, making it a Secure Server by getting a domain name for it. 
 	Attached screenshot shows what URL of landing page looks like after getting a domain name and making it secure ---https://drive.google.com/file/d/18D3rM6ocbFHES4q6ZoNOmmy6S6TmH-g8/view?usp=sharing
+ 
 ##(http://13.61.2.68:3000 or http://gogogaga:3000) – Direct access to the Node.js app, A reverse proxy like Nginx is commonly used in backend setups to improve performance, security, and scalability. 
 Attached screenshot shows what backend URL and page looks like after implementing node.js and nginx as reverse proxy ---https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
 	https://drive.google.com/file/d/1h0lcboQCcca-AKsBWvvv97TicdeRtUnm/view?usp=sharing
