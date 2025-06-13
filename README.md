@@ -76,9 +76,8 @@ Breaking it down:
                                               OUR WEB SERVER
                   
 
-The team wrote an HTML landing page code and saved it under a directory called index.html on the kali so it can can easily access it whenever we ssh into the server. 
+The team wrote an HTML landing page code and saved it under a directory called index.html on the kali so we can easily access it whenever we ssh into the server. 
 
-Attached screenshot of our HTML landing page code--(https://drive.google.com/file/d/1xrhtSh1hyLxUJ4MM1AcaU-t7QzwU2oAH/view?usp=sharing)
 	
 we were able to copy the HTML landing page code written and saved in the index.html directory on the kali via the Secure Copy Protocol SCP
 
@@ -92,7 +91,7 @@ After ssh into the server,we ran
 
  	"sudo nano /var/www/html/index.html" to view the html file in the server
 Attached screenshot to confirm my HTML landing page code is in our server under the /var/www/html/index.html directory
----https://drive.google.com/file/d/1JTu76Dz6sAV28yX8sqvfs1sH6pdOOP3p/view?usp=sharing
+---https://drive.google.com/file/d/1JHg7RraysXeOG44cLomcTk-sxwLFkVkL/view?usp=sharing
 					 
 
 					HOW WE DEPLOYED EVERYTHING ON THE SERVER
@@ -197,11 +196,9 @@ Public IP
 	##SCREENSHOTS				
 
 ## Visit the hosted page: (http://13.61.2.68) IP Address That Accesses The Landing Page Using Just HTTP(not secured) 
-Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP--https://drive.google.com/file/d/1t16YaW43NNxGKSqBKMswqIGwALUqe_en/view?usp=sharing
-
+Attached screenshot shows what URL of the landing page looks like with an unsecured HTTP---https://drive.google.com/file/d/1C3gLIvLp_vyKIQa5DUVEum_FhGGWhHv5/view?usp=sharing
 ##(Also accessible via: (https://gogogaga.site)) but with configuring SSL Certificate, making it a Secure Server by getting a domain name for it. 
-	Attached screenshot shows what URL of landing page looks like after getting a domain name and making it secure ---https://drive.google.com/file/d/1-lvAmO9H9FUVfQazpjD0OWLN0NxWNQVZ/view?usp=sharing
-
+	Attached screenshot shows what URL of landing page looks like after getting a domain name and making it secure ---https://drive.google.com/file/d/18D3rM6ocbFHES4q6ZoNOmmy6S6TmH-g8/view?usp=sharing
 ##(http://13.61.2.68:3000 or http://gogogaga:3000) – Direct access to the Node.js app, A reverse proxy like Nginx is commonly used in backend setups to improve performance, security, and scalability. 
 Attached screenshot shows what backend URL and page looks like after implementing node.js and nginx as reverse proxy ---https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
 	https://drive.google.com/file/d/1h0lcboQCcca-AKsBWvvv97TicdeRtUnm/view?usp=sharing
