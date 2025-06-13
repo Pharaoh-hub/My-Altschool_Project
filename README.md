@@ -204,7 +204,7 @@ Attached screenshot shows what URL of the landing page looks like with an unsecu
 ##(http://13.61.2.68:3000 or http://gogogaga:3000) – Direct access to the Node.js app, A reverse proxy like Nginx is commonly used in backend setups to improve performance, security, and scalability. 
 Attached screenshot shows what backend URL and page looks like after implementing node.js and nginx as reverse proxy ---
 
-	https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
+https://drive.google.com/file/d/1C0xQGq7FNWmUyH_hd0fYCxpD2MeN90hD/view?usp=sharing
 
-	https://drive.google.com/file/d/1h0lcboQCcca-AKsBWvvv97TicdeRtUnm/view?usp=sharing
+https://drive.google.com/file/d/1h0lcboQCcca-AKsBWvvv97TicdeRtUnm/view?usp=sharing
 
